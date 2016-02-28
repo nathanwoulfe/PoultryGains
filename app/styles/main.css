@@ -1,0 +1,384 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@font-face {
+  font-family: 'codropsicons';
+  src: url("../fonts/codropsicons/codropsicons.eot");
+  src: url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("../fonts/codropsicons/codropsicons.woff") format("woff"), url("../fonts/codropsicons/codropsicons.ttf") format("truetype"), url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 14, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 21, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+body,
+html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0; }
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 31, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+/* line 36, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 40, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #ffe8e7;
+  background: #E96D65;
+  font-weight: 300;
+  overflow-x: hidden; }
+
+/* line 48, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+a {
+  color: #888;
+  text-decoration: none; }
+  /* line 51, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+  a:hover, a:active {
+    color: #333; }
+
+/* line 56, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+.main {
+  margin: 0 auto;
+  padding: 2em 2em 5em;
+  max-width: 50em; }
+
+/* line 63, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+h1 {
+  margin: 0;
+  color: #b14943;
+  text-transform: uppercase; }
+
+/* line 69, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+svg {
+  max-width: 250px;
+  margin: 0 auto;
+  position: relative;
+  display: block; }
+  /* line 75, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+  svg path {
+    fill: #ffe8e7; }
+
+/* line 80, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+header {
+  position: relative; }
+  /* line 83, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+  header:before, header:after {
+    content: '';
+    width: calc(50% - 155px);
+    left: 25px;
+    top: calc(50% - 5px);
+    border-top: 1px solid #eee;
+    display: block;
+    position: absolute; }
+  /* line 93, D:/Documents/My Web Sites/PoultryGains/app/styles/base.scss */
+  header::after {
+    left: auto;
+    right: 25px; }
+
+@font-face {
+  font-family: 'nlicons';
+  src: url("../fonts/nlicons/nlicons.eot");
+  src: url("../fonts/nlicons/nlicons.eot?#iefix") format("embedded-opentype"), url("../fonts/nlicons/nlicons.woff") format("woff"), url("../fonts/nlicons/nlicons.ttf") format("truetype"), url("../fonts/nlicons/nlicons.svg#nlicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* general style for the form */
+/* line 12, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.nl-form {
+  width: 100%;
+  margin: 0.3em auto 0 auto;
+  font-size: 4em;
+  line-height: 1.5;
+  /* normalize the input elements, make them look like everything else */ }
+  /* line 17, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-form ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  /* line 25, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-form input,
+  .nl-form select,
+  .nl-form button {
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
+  /* line 39, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-form input:focus {
+    outline: none; }
+  /* line 43, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-form .nl-field-go {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+    width: 1.8em;
+    text-align: center;
+    color: transparent; }
+  /* line 55, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-form .nl-submit {
+    line-height: 3;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    background: #76C3BD;
+    color: #fff;
+    padding: 0 1em 0 80px;
+    font-size: 40%;
+    font-weight: bold;
+    letter-spacing: 3px; }
+    /* line 67, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+    .nl-form .nl-submit:before {
+      content: "\e001";
+      color: #fff;
+      float: left;
+      padding: 0 0.7em;
+      margin: 0 0.8em 0 0;
+      background: #69B1A9;
+      position: absolute;
+      left: 0;
+      right: calc(100% - 80px);
+      transition: all ease-in-out 0.2s; }
+    /* line 81, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+    .nl-form .nl-submit:hover:before {
+      right: -1em; }
+
+/* custom field (drop-down, text element) styling  */
+/* line 91, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.nl-field {
+  display: inline-block;
+  position: relative; }
+  /* line 95, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-field.nl-field-open {
+    z-index: 10000; }
+    /* line 98, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+    .nl-field.nl-field-open ul {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-20%) scale(1);
+      transition: visibility 0s 0s, opacity 0.3s, transform 0.3s; }
+    /* line 105, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+    .nl-field.nl-field-open ~ .nl-overlay {
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0s; }
+  /* line 112, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-field ul {
+    position: absolute;
+    visibility: hidden;
+    background: #76C3BD;
+    left: -0.5em;
+    top: 50%;
+    font-size: 80%;
+    opacity: 0;
+    transform: translateY(-40%) scale(0.9);
+    transition: visibility 0s 0.3s, opacity 0.3s, transform 0.3s; }
+    /* line 123, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+    .nl-field ul li {
+      color: #fff;
+      position: relative; }
+
+/* the toggle is the visible part in the form */
+/* line 134, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.nl-field-toggle,
+.nl-form input,
+.nl-form select {
+  line-height: inherit;
+  display: inline-block;
+  color: #b14943;
+  cursor: pointer;
+  border-bottom: 1px dashed #b14943; }
+
+/* line 144, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.nl-dd ul li {
+  padding: 0 1.5em 0 0.5em;
+  cursor: pointer;
+  white-space: nowrap; }
+  /* line 149, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-dd ul li.nl-dd-checked {
+    color: #478982; }
+    /* line 152, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+    .nl-dd ul li.nl-dd-checked:before {
+      content: "\e000";
+      position: absolute;
+      right: 1em;
+      font-size: 50%;
+      line-height: 3; }
+
+/* line 164, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.no-touch .nl-dd ul li:hover {
+  background: rgba(0, 0, 0, 0.05); }
+  /* line 166, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .no-touch .nl-dd ul li:hover:active {
+    color: #478982; }
+
+/* icons for some elements */
+/* line 177, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.nl-dd ul li.nl-dd-checked:before,
+.nl-submit:before,
+.nl-field-go:before {
+  font-family: 'nlicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 187, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.nl-ti-text ul {
+  min-width: 8em;
+  /* example field below text input */ }
+  /* line 190, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-ti-text ul li.nl-ti-input input {
+    width: 100%;
+    padding: 0.2em 2em 0.2em 0.5em;
+    border-bottom: none;
+    color: #fff; }
+  /* line 198, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-ti-text ul li.nl-ti-example {
+    font-size: 40%;
+    font-style: italic;
+    font-weight: 400;
+    padding: 0.4em 1em;
+    color: rgba(0, 0, 0, 0.2);
+    border-top: 1px dashed rgba(255, 255, 255, 0.7); }
+  /* line 206, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-ti-text ul li.nl-ti-example em {
+    color: #fff; }
+
+/* line 211, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.nl-field-go:before {
+  content: "\e001";
+  font-size: 75%;
+  color: #fff;
+  width: 100%;
+  line-height: 2.5;
+  display: block; }
+
+/* custom placeholder color */
+/* line 223, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8); }
+
+/* line 228, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+input:active::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2); }
+
+/* line 232, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8); }
+
+/* line 237, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+input:active::-moz-placeholder,
+input:focus::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2); }
+
+/* line 241, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8); }
+
+/* line 246, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+input:active::-ms-input-placeholder,
+input:focus::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2); }
+
+/* submit button */
+/* line 252, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.nl-submit-wrap {
+  margin-top: 0.4em; }
+
+/* line 257, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.no-touch .nl-form .nl-submit:hover,
+.no-touch .nl-form .nl-submit:active {
+  background: #69B1A9; }
+
+/* line 261, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.no-touch .nl-form .nl-submit:hover:before {
+  background: #58a199; }
+
+/* overlay becomes visible when a field is opened */
+/* line 268, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+.nl-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: 9999;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.3s, opacity 0.3s;
+  -moz-transition: visibility 0s 0.3s, opacity 0.3s;
+  transition: visibility 0s 0.3s, opacity 0.3s; }
+
+@media screen and (max-width: 45em) {
+  /* line 284, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-form {
+    font-size: 3em; } }
+
+@media screen and (max-width: 25em) {
+  /* line 290, D:/Documents/My Web Sites/PoultryGains/app/styles/components.scss */
+  .nl-form {
+    font-size: 2em; } }
+
+/* line 1, D:/Documents/My Web Sites/PoultryGains/app/styles/table.scss */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: right; }
+  /* line 7, D:/Documents/My Web Sites/PoultryGains/app/styles/table.scss */
+  table td {
+    padding: 0 5px; }
+    /* line 10, D:/Documents/My Web Sites/PoultryGains/app/styles/table.scss */
+    table td:first-child {
+      text-align: left; }
+  /* line 15, D:/Documents/My Web Sites/PoultryGains/app/styles/table.scss */
+  table th {
+    background: #fff;
+    color: #E96D65;
+    padding: 2px 5px; }
+    /* line 20, D:/Documents/My Web Sites/PoultryGains/app/styles/table.scss */
+    table th:first-child {
+      text-align: left; }
+
+/* line 5, D:/Documents/My Web Sites/PoultryGains/app/styles/main.scss */
+h4 {
+  font-size: 4em; }
+
+/* line 9, D:/Documents/My Web Sites/PoultryGains/app/styles/main.scss */
+h5 {
+  font-size: 3em;
+  font-weight: 300;
+  margin-bottom: 1em; }
+
+/* line 15, D:/Documents/My Web Sites/PoultryGains/app/styles/main.scss */
+.data-display {
+  padding-top: 0.4em; }
+
+/*# sourceMappingURL=main.css.map */

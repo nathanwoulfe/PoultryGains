@@ -1,0 +1,21 @@
+/* line 1, D:/Documents/My Web Sites/PoultryGains/app/styles/table.scss */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: right; }
+  /* line 7, D:/Documents/My Web Sites/PoultryGains/app/styles/table.scss */
+  table td {
+    padding: 0 5px; }
+    /* line 10, D:/Documents/My Web Sites/PoultryGains/app/styles/table.scss */
+    table td:first-child {
+      text-align: left; }
+  /* line 15, D:/Documents/My Web Sites/PoultryGains/app/styles/table.scss */
+  table th {
+    background: #fff;
+    color: #E96D65;
+    padding: 2px 5px; }
+    /* line 20, D:/Documents/My Web Sites/PoultryGains/app/styles/table.scss */
+    table th:first-child {
+      text-align: left; }
+
+/*# sourceMappingURL=table.css.map */

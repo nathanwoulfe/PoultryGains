@@ -1,0 +1,62 @@
+<form novalidate id="nl-form" class="nl-form" ng-submit="submit()">
+    I am a 
+    <select name="gender">
+        <option value="m" selected>dude</option>
+        <option value="f">fitchick</option>
+    </select>
+    <br>who weighs <input type="text" value="200" name="weight" placeholder="200" data-subline="Be honest, you're only fooling yourself"/>  
+    <select name="unit">
+        <option value="lb" selected>lb</option>
+        <option value="kg">kg</option>        
+    </select>    
+    <br>and is chasing
+    <select name="type">
+        <option value="gainz" selected>dem gainz</option>
+        <option value="shred">dat shred</option>
+    </select>
+    <div class="nl-submit-wrap">
+        <button class="nl-submit" type="submit">Cluck cluck!</button>
+    </div>
+    <div class="nl-overlay"></div>
+</form>
+<div class="data-display" ng-show="hasSubmit">
+  <h4>Aim for {{intake}} grams of protein daily.</h4>
+  <h5>That's around {{getTotal(data[0].gsx$serve.$t * getServes(data[0]))}} of chicken breast ({{proteinPer100(0)}} of protein per {{base}}).</h5>
+  <table>
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Total intake</th>
+        <th>Total carbs</th>
+        <th>Total fat</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="d in data | filter:isChicken">
+        <td>{{d.gsx$source.$t}}</td>
+        <td>{{d.gsx$servemultiplier.$t === '-1' ? getTotal(d.gsx$serve.$t * getServes(d)) : getServes(d, d.gsx$servemultiplier.$t)}}</td>
+        <td>{{getTotal(d.gsx$carbs.$t * getServes(d))}}</td>
+        <td>{{getTotal(d.gsx$totalfat.$t * getServes(d))}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5>Sick of chook? Try these instead...</h5>
+  <table>
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Total intake</th>
+        <th>Total carbs</th>
+        <th>Total fat</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="d in data | filter:notChicken">
+        <td>{{d.gsx$source.$t}}</td>
+        <td>{{d.gsx$servemultiplier.$t === '-1' ? getTotal(d.gsx$serve.$t * getServes(d)) : getServes(d, d.gsx$servemultiplier.$t)}}</td>
+        <td>{{getTotal(d.gsx$carbs.$t * getServes(d))}}</td>
+        <td>{{getTotal(d.gsx$totalfat.$t * getServes(d))}}</td>
+      </tr>
+    </tbody>
+  </table>  
+</div>

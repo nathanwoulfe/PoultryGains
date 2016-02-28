@@ -1,0 +1,17 @@
+@import "base.scss";
+@import "components.scss";
+@import "table.scss";
+
+h4 {
+  font-size:4em;
+}
+
+h5 {
+  font-size:3em;
+  font-weight: 300;
+  margin-bottom:1em;
+}
+
+.data-display {
+  padding-top:0.4em;
+}

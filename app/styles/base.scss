@@ -1,0 +1,97 @@
+/* General Demo Style */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@font-face {
+  font-family: 'codropsicons';
+  src: url('../fonts/codropsicons/codropsicons.eot');
+  src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #ffe8e7;
+  background: #E96D65;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+a {
+  color: #888;
+  text-decoration: none;
+  &:hover, &:active {
+    color: #333;
+  }
+}
+
+.main {
+  margin: 0 auto;
+  padding: 2em 2em 5em;
+  max-width: 50em;
+}
+
+// svg / logotype
+h1 {
+  margin:0;
+  color:#b14943;
+  text-transform: uppercase;
+}
+
+svg {
+  max-width:250px;
+  margin:0 auto;
+  position:relative;
+  display:block;
+  
+  path {
+    fill: #ffe8e7;
+  }
+}
+
+header {
+    position: relative;
+  
+    &:before, &:after {
+      content:'';
+      width:calc(50% - 155px);
+      left:25px;
+      top:calc(50% - 5px);      
+      border-top:1px solid #eee;
+      display:block;
+      position: absolute;
+    }
+  
+  &::after {
+    left:auto;
+    right:25px;
+  }
+}
